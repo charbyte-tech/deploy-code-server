@@ -38,6 +38,8 @@ RUN curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 
 RUN sudo apt install nodejs -y
 
+RUN sudo npm install -g npm@latest
+
 # Port
 ENV PORT=8080
 
