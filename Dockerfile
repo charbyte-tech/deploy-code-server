@@ -34,6 +34,10 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # -----------
 
+RUN curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+
+RUN sudo apt install nodejs -y
+
 # Port
 ENV PORT=8080
 
